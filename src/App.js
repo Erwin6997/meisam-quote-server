@@ -19,7 +19,7 @@ function App() {
           console.log(data)
         });
     }, [urldata]);
-    
+    console.log(valueB)
     return (
       <div>
         <div className="App">
