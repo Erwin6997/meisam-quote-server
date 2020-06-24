@@ -7,7 +7,7 @@ function App() {
   const [query , setQuery] = useState("/");
   const [quotes , setQuotes] = useState();
   const urldata = "https://nova-cerulean-throne.glitch.me".concat(query);
-  const [valueB , setValueB] = useState(); 
+  //const [valueB , setValueB] = useState(); 
   const add = (value) => {
     setQuery(value)
   }
@@ -19,7 +19,7 @@ function App() {
           console.log(data)
         });
     }, [urldata]);
-    console.log(valueB)
+    //console.log(valueB)
     return (
       <div>
         <div className="App">
@@ -28,7 +28,7 @@ function App() {
           <button className="btn btn-primary add" onClick={() => {add("/quick")}}>Random Lodash</button>
           <button className="btn btn-primary add" onClick={() => {add("/quotes/random")}}>Random</button>
           <p> Search By Character:</p>
-          <input name="firstName" type="text"value={valueB} onChange={() => {setQuery("/quotes/search/?term=".concat(valueB))}}/>
+          <input name="firstName" type="text" onChange={() => {setQuery("/quotes/search/?term=miss")}}/>
           <button className="btn btn-primary add">Search</button>
         </div>
       <Show Data={quotes}/>
