@@ -27,7 +27,7 @@ function App() {
           <button className="btn btn-primary add" onClick={() => {add("/quotes")}}>Show All</button>
           <button className="btn btn-primary add" onClick={() => {add("/quick")}}>Random Lodash</button>
           <button className="btn btn-primary add" onClick={() => {add("/quotes/random")}}>Random</button>
-          <p> Search By Character:</p>
+          <h2> Search By Character: </h2>
           <input name="firstName" type="text" onChange={() => {setQuery("/quotes/search/?term=miss")}}/>
           <button className="btn btn-primary add">Search</button>
         </div>
